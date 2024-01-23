@@ -4,3 +4,6 @@ you can apply the filter on username by adding a Where-Object clause to the $res
 
 # Filter the result by username
 $result = $result | Where-Object {$_.UserName -eq "John"}
+
+# LogonType
+In the result set LogonType is a property that indicates the kind of logon that occurred. For example, LogonType 2 means interactive logon, which means the user logged on locally to the computer. LogonType 3 means network logon, which means the user accessed a network resource such as a shared folder. You can see the full list of LogonType values and their meanings here. LogonType is useful for filtering the events based on the type of logon you are interested in. Hope this helps.
